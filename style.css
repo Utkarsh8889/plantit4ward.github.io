@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section {
+    position: relative;
+    width: 82%;
+    min-height: 100vh;
+    background: url(/assets/IMG_3878.jpg);
+    background-size: cover;
+
+}
+section:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/splash.jpg);
+    background-size: 1600px;
+    background-position: center;
+    mix-blend-mode: screen;
+}
+h2.plant{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    z-index: 10;
+    color: green;
+    font-size: 100px;
+    
+}
+h2.it{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    z-index: 10;
+    color: green;
+    font-size: 100px;
+}
+h2.forward{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    z-index: 10;
+    color:	#f4c6c2;
+    font-size: 100px;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container a {
+position: absolute;
+top: 500px;
+right: 38px;
+width: 300px;
+height: 75px;
+margin: 10px 0;
+font-size: 24px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+transition: 0.5s;
+color: pink;
+font-size: 36px;
+}
+.container a:hover {
+    color: #22522D;
+}
+.container a:before {
+
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background: url(/assets/plant_button.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: 0.5s;
+}
+.container a:hover:before {
+    width: 100%;
+}
+
+.container a span {
+    position: relative;
+    z-index: 1;
+}
+#header {
+    height: 300px;
+    background-color: green;
+}
+#header img {
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+#header img:hover {
+    filter: grayscale(75%);
+}
+.btn_main {
+    position: relative;
+    left: 100px;
+    top: 25px;
+    display: inline;
+    padding: 15px 25px;
+    margin-right: 100px;
+    color: pink;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn_main:hover {
+    color: black;
+    background-color: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink, 0 0 80px pink;
+    transition-delay: 0.5s;
+}
+.top-banner-title {
+    font-size: 140px;
+    position: relative;
+    left: 425px;
+    top: 75px;
+    letter-spacing: 2px;
+    transform: (-50%, -50%);
+    background: url(./assets/title_pic_2.jpg) -10000px;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
+}
+#body-content-title {
+    position: absolute;
+    top: 400px;
+    left: 290px;
+}
